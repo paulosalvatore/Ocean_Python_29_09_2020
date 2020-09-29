@@ -1,0 +1,16 @@
+<script>
+function solicitar_escolha() {
+  const escolha_usuario = prompt("Por acaso você é *futurista* ou tá mais pra *medieval*?\n").toLowerCase().trim()
+
+  if (escolha_usuario.includes("medieval")) {
+    alert("Você recebeu uma espada!")
+  } else if (escolha_usuario.includes("futur")) {
+    alert("Você recebeu um sabre de luz!")
+  } else {
+    alert("Tente novamente...")
+    solicitar_escolha()
+  }
+}
+
+solicitar_escolha()
+</script>
